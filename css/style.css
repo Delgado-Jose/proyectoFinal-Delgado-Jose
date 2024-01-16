@@ -61,6 +61,9 @@ header nav ul li{
    height: auto;
    justify-content: center;
 }
+.link-title{
+  text-decoration: none;
+}
 /*---------------------------------
 ----->        PRINCIPAL
 -----------------------------------*/
