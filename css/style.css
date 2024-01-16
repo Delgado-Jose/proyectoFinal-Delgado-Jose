@@ -1,6 +1,5 @@
 /*RESET*/
 *{
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Courier Prime', monospace;
@@ -8,45 +7,24 @@
     font-family: 'Roboto Slab', serif;
     
 }
-/*
------>  GRID
-*/
-.grid-container{
-    display: grid;
-    grid-template-rows: auto auto 1fr;  
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 
-    "header header header"
-    "main main main"
-    "footer footer footer"
-    ;
-    gap: 5px;
-    row-gap: 5px;
-    margin: 0;
-}
-/*
------>  ENCABEZADO
-*/
+/*--------------------------------------
+----->        ENCABEZADO
+----------------------------------------*/
 header{
-    grid-area: header;
-    background-color: #1a120a;
-    height: 250px;
+   background-color: #000000;
 }
 header h1{
     display: flex;
     color: #e6e6e6;
     grid-column: span1;
 }
-header nav ul{
-    display: flex;
-    text-decoration: none;  
-    justify-content: space-evenly;
-    width: 100%;
-    flex-flow: wrap;
-}
+
 header nav ul li{
     color:#e6e6e6;
     list-style-type: none;
+}
+.nav-bg-color{
+    background-color: #ff7300;
 }
 .header-container{
     display: flex;
@@ -54,14 +32,40 @@ header nav ul li{
     align-items: center;
     flex-flow: wrap;
 }
-.logo{
-   width: 250px;
+.form-search{
+    display: flex;
 }
-/*
------>  PRINCIPAL
-*/
-main{
-    grid-area: main;
+.btn-white-color{
+    color: #e6e6e6;
+    border-color: #ff7300;
+}
+.btn-white-color:hover{
+    background-color: #ff7300;
+    color: #e6e6e6;
+}
+.btn-orange-color{
+  color: #e6e6e6;
+  border-color: #ff7300;
+  background-color: #ff7300;
+}
+.btn-orange-color:hover{
+  background-color: #e6e6e6;
+  color: #ff7300;
+}
+.logo-container{
+    display: flex;
+}
+.logo{
+    max-width: 100%;
+   max-height: 100%;
+   height: auto;
+   justify-content: center;
+}
+/*---------------------------------
+----->        PRINCIPAL
+-----------------------------------*/
+.body-bg-color{
+    background-color: #633100;
 }
 main h2{
     text-align: center;
@@ -69,39 +73,104 @@ main h2{
 main img{
     width: 100%;
 }
-.banner{
-    display: flex;
-    justify-content: center;
-    background-image: url("../assets/store/banner1_blur.png");
-    height: 500px;
-    background-size: cover;
-    background-position: center center;
+aside h3{
+  text-align: center;
 }
-.banner-p{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("../assets/store/banner1-op.png");
-    background-size: cover;
-    font-size: xx-large;
+aside h4{
+  text-align: center;
+}
+/*------------
+----->  CAROUSEL
+--------------*/
+#carouselExampleAutoplaying {
+    max-height: 500px; 
+    overflow: hidden;
+  }
+.carousel-item {
+  position: relative;
+  text-align: center;
+  overflow: hidden; 
+}
+.carousel-inner {
+  max-height: 100%;
+}
+.carousel-item img {
+    width: 100%;
+    max-height: 100%; 
+    object-fit: cover; 
+  }
+.carousel-p{
     color: #e6e6e6;
-    width: 50%;
-    height: 100%;
+    font-size: 50px;
+  }
+.align-text{
+    justify-content: center;
+    align-items: center;
+  }
+.bg-portada {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%; 
+  background-attachment: fixed;
+  transform: translateX(0px);
+  transition: transform 0.3s ease;
+  }
+.overlay {
+    position: relative;
+} 
+.nosotros{
+    text-indent: 20px;
+    margin: 10px;
 }
-.gallery{
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: wrap;
-    margin: 0;
+.title{
+  color: #ff7300;
+  text-decoration: wavy;
 }
-.gallery-item{
-    text-align: center;
+.subtitle{
+    background-color: #000000;
+    color: #e6e6e6;
+}
+ /*
+ -----   Productos
+ */
+.article-info{
+  text-align: center;
+}
+/*
+------  ASIDE
+*/
+.aside-demostration{
+  margin: 1px;
 }
 /*
 ----->  PIE DE PAGINA
 */
 footer{
     grid-area: footer;
-    background-color: #1a120a;
+    background-color: #000000;
+    color: #e6e6e6;
 }
-
+.newsletter-title{
+  margin: 0;
+  font-size: 20px;
+}
+.newsletter-subtitle{
+  text-align: center;
+}
+.footer-nav{
+  list-style-type: none;
+  text-align: center;
+}
+.bg-nav-footer{
+  background-color: #ff7300;
+}
+.footer-nav li a{
+  text-decoration: none;
+  align-items: center;
+  color: #e6e6e6;
+}
+footer ul li{
+  display: inline;
+  justify-content: space-evenly;
+}

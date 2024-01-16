@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Roboto+Slab&family=Roboto:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+<body class="body-bg-color">  
+    <section class="container-fluid">
+        <!--            HEADER              -->
+        <header>
+            <nav class="navbar nav-bg-color navbar-expand-lg" data-bs-theme="dark">
+                <div class="container-fluid">
+                    <h1>Piano Paradiso</h1>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="justify-content-end w-100 navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./faqs.html">Faqs</a>
+                            </li>
+                        </ul>
+                    </div>  
+                </div>
+            </nav>
+            <Section class="row" >
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="d-flex flex-column align-items-end justify-content-center h-100 m-3">
+                        <form class="mb-3 w-100" role="search">
+                            <input class="form-control me-2 form-search" type="search" placeholder="Buscar Productos" aria-label="Search">
+                        </form>
+                        <button class="btn btn-outline-success btn-white-color w-50" type="submit">Buscar</button>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="justify-content-center logo-container">
+                        <img class="logo" src="../assets/logo.png" alt="Logo-Piano-Paradiso">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12"></div>
+            </Section>
+        </header>
+        <!--            MAIN                -->
+        <main>
+            <section>
+                <h2 class="title">CONTACTO</h2>
+            </section>
+            <section class="container-fluid bg-white">
+                <section class="row">
+                    <section class="col-lg-6 col-md-6 col-sm-12">
+                        <article>
+                            <h3>Información</h3>
+                            <p>
+                                Tel.: 08007894 <br>
+                                Dirección: 18 de Julio, 997. Montevideo <br>
+                                Email: ventas@pianoparadiso.com.uy <br>
+                                Horarios: Lunes a Viernes 08:00 a 19:00 y Sabados 9:00 a 12:00
+                            </p>
+                        </article>
+                        <article class="ratio ratio-16x9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3272.018678171493!2d-56.197523124511456!3d-34.905980772847386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f802cd8df2b5f%3A0xe670f93ef39f19fa!2sAv.%2018%20de%20Julio%20997%2C%2011100%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1705424870352!5m2!1ses-419!2suy" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </article>
+                    </section>
+                    <section class="col-lg-6 col-md-6 col-sm-12">
+                        <h3>Formulario</h3>
+                        <form action="#" method="post" class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" class="form-control" id="apellido" name="apellido" required>
+                                <label for="telefono">Telefono:</label>
+                                <input type="number" class="form-control" id="telefono" name="telefono" required>
+                                <label for="email">Email:</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <label for="asunto">Asunto:</label>
+                                <input type="text" class="form-control" id="asunto" name="asunto" required>
+                                <textarea class="form-control" id="comentarios" rows="3"></textarea>
+                                <div class="invalid-feedback">
+                                    Por favor, ingresa un correo electrónico válido.
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-orange-color btn-block">Enviar</button>
+                        </form>
+                    </section>
+                </section>
+            </section>
+        </main>
+        <!--            FOOTER              -->        
+        <footer>
+            <section class="container-fluid">
+                <div class="container mt-2">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <p class="newsletter-title text-center">Newsletter</p>
+                            <p class="newsletter-subtitle text-center">Suscríbete para recibir más novedades.</p>
+                            <form action="#" method="post" class="needs-validation" novalidate>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <div class="invalid-feedback">
+                                        Por favor, ingresa un correo electrónico válido.
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-white-color btn-block">Suscribirse</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <h6>Contacto</h6>
+                        <p>
+                            Tel.: 08007894 <br>
+                            Dirección: 18 de Julio, 997. Montevideo <br>
+                            Email: ventas@pianoparadiso.com.uy <br>
+                            Horarios: Lunes a Viernes 08:00 a 19:00 <br> Sabados 9:00 a 12:00
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="justify-content-center logo-container">
+                            <img class="logo" src="../assets/logo.png" alt="Logo-Piano-Paradiso">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12 col-sm-12">
+                        
+                    </div>
+                </div>
+                <div class="row bg-nav-footer">
+                    <ul class="footer-nav">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="./productos.html">Productos</a></li>
+                        <li><a href="./contacto.html">Contacto</a></li>
+                        <li><a href="./nosotros.html">Nosotros</a></li>
+                        <li><a href="./faqs.html">Faqs</a></li>
+                    </ul>
+                </div>
+            </section>
+        </footer>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
