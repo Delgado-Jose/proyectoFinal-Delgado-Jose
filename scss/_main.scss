@@ -1,0 +1,67 @@
+.body-bg-color{
+    background-color: map-get($bg-colors, secondary);
+}
+main{
+  h2{
+    text-align: center;
+  }
+  img{
+    width: 100%;
+  }
+}
+//----->  CAROUSEL
+#carouselExampleAutoplaying {
+    max-height: 500px; 
+    overflow: hidden;
+  }
+.carousel{
+  &-item {
+    position: relative;
+    text-align: center;
+    overflow: hidden; 
+  }
+  &-inner {
+    max-height: 100%;
+  }
+  &-item img {
+    width: 100%;
+    max-height: 100%; 
+    object-fit: cover; 
+  }
+}
+.bg-portada {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%; 
+  background-attachment: fixed;
+  transform: translateX(0px);
+  transition: transform 0.3s ease;
+  }
+.overlay {
+    position: relative;
+}
+//-------->   PRODUCTOS
+.article-info{
+  text-align: center;
+}
+//-------->   NOSOTROS
+.we {
+  text-indent: 15px;
+  margin: 10px;
+  line-height: 1.6;
+  font-size: 16px;
+
+  h3 {
+    color: map-get($color-fonts, primary);
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  strong em {
+    font-style: italic;
+    color: map-get($color-fonts, primary);
+  }
+}

@@ -1,0 +1,7 @@
+@mixin sizes($w, $h){
+    width: $w;
+    height: $h;
+}
+.bi{
+    @include sizes(30px, 30px)
+}

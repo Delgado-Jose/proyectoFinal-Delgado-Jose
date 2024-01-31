@@ -1,0 +1,32 @@
+footer{
+    grid-area: footer;
+    background-color: map-get($bg-colors, primary);
+    color: map-get($color-fonts, secondary)
+}
+.bg-nav-footer{
+  background-color: map-get($bg-colors, tertiary);
+}
+.newsletter{
+  &--title{
+    margin: 0;
+    font-size: 20px;
+  }
+  &--subtitle{
+    text-align: center;
+  }
+}
+.footer-nav{
+  list-style-type: none;
+  text-align: center;
+    li{ 
+      display: inline;
+      justify-content: space-evenly;
+      a{
+        text-decoration: none;
+        align-items: center;
+        color: map-get($color-fonts, secondary);
+      }
+    }
+}
+
+
