@@ -12,7 +12,7 @@ Bienvenido a Piano Paradiso, tu tienda en línea para instrumentos musicales de 
 
 ## Newsletter
 
-¡Mantente actualizado con las últimas novedades de Piano Paradiso! Suscríbete a nuestra newsletter para recibir noticias sobre nuevos instrumentos, descuentos exclusivos, sorteos y más. Haz clic [aquí](link) para suscribirte.
+¡Mantente actualizado con las últimas novedades de Piano Paradiso! Suscríbete a nuestra newsletter para recibir noticias sobre nuevos instrumentos, descuentos exclusivos, sorteos y más.
 
 ## Busqsueda
 
