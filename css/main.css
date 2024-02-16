@@ -123,8 +123,19 @@ main img {
   position: relative;
 }
 
+@keyframes zHover {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
 .article-info {
   text-align: center;
+}
+.article-img:hover {
+  animation: zHover 0.5s ease-in-out forwards;
 }
 
 .we {

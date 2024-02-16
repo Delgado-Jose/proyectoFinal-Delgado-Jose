@@ -42,9 +42,25 @@ main{
     position: relative;
 }
 //-------->   PRODUCTOS
-.article-info{
-  text-align: center;
+@keyframes zHover {
+  from{
+    transform: scale(1);
+  }
+  to{
+    transform: scale(1.1);
+  }
 }
+.article{
+  &-info{
+    text-align: center;
+  }
+  &-img{
+    &:hover{
+      animation: zHover 0.5s ease-in-out forwards;   
+    }
+  }
+}
+
 //-------->   NOSOTROS
 .we {
   text-indent: 15px;
